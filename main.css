@@ -1,0 +1,353 @@
+/*debugging*/
+.box {
+    width: inherit;
+    height: inherit;
+    background-color: #FF5A5F;
+    padding: 1em;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+}
+/*debugging*/
+
+/*Colors*/
+:root {
+    --dbl: #285579;
+    --bg: #c8eaff;
+    --bl: #2178BF;
+    --ddbl: #2B3741;
+}
+/*Colors*/
+
+/*GENERAL*/
+
+* {
+    text-decoration: none;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    /*background: linear-gradient(to left, white 76%, black);*/
+    background: white;
+}
+
+.container {
+    background-color: aliceblue;
+    width: 100%;
+    height: max-content;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sidebar {
+    background-color: var(--dbl);
+    height: auto;
+    flex-basis: 70px;
+}
+
+.side {
+    background-color: var(--bl);
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+.side-elem {
+    margin: auto;
+    padding: 0;
+}
+
+.side img {
+    width: 50%;
+    height: 50%;
+}
+
+.main {
+    height: 100%;
+    width: inherit;
+    background-color: white;
+    margin: 0;
+    flex-grow: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Header*/
+
+.name-title {
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+    color: whitesmoke;
+    text-shadow: 0px 0px 3px black;
+}
+
+.head {
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 50px;
+
+    background-color: var(--dbl);
+    border-style: solid;
+    border-radius: 2px;
+}
+
+.head img {
+    transition: all 1s;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: var(--bg);
+    filter: drop-shadow(0px 0px 3px black);
+}
+
+.head img:hover {
+    transform: scale(1.1);
+    border-style: dashed;
+    border-radius: 100%;
+    filter: drop-shadow(0px 0px 6px black);
+}
+
+.division {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    background-color: var(--bg);
+}
+
+.division::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*Home*/
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.pfp {
+    position: absolute;
+    right: 20px;
+    top: 130px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: var(--dbl);
+}
+
+.home h1 {
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: var(--dbl);
+    text-shadow: 0px 0px 2px var(--dbl);
+}
+
+/*Socials*/
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 700px;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.socials a {
+    display: flex;
+    flex-basis: 275px;
+    height: 60px;
+
+    cursor: pointer;
+}
+
+.buttonlink {
+    flex-basis: 275px;
+    display: flex;
+
+    background-color: var(--dbl);
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+    position: relative;
+    z-index: 0;
+}
+
+.buttonlink img {
+    filter: drop-shadow(0px 0px 3px white);
+    z-index: 0;
+}
+
+.buttonlink span {
+    color: greenyellow;
+    text-shadow: 0px 0px 4px black;
+    transition: 0.5s;
+    font-family: "Lato", sans-serif;
+}
+
+.buttonlink::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bl);
+    z-index: -1;
+    border-radius: 5px;
+    
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+}
+
+.buttonlink::before {
+    transform: scaleY(0);
+}
+
+.buttonlink:hover::before {
+    transform: scaleY(1);
+}
+
+.buttonlink:hover span {
+    color: white;
+}
+
+.buttonlink:hover img {
+    color: white;
+}
+
+.buttonlink:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px black;
+}
+
+/*About*/
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-text {
+    width: 620px;
+    text-align: center;
+    font-size: 40px;
+    text-wrap: wrap;
+}
+
+.skills {
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 350px;
+    height: 500px;
+
+    background-color: #385CAB;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+.skill-name {
+    color: greenyellow;
+    text-shadow: 0px 0px 4px black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+}
+
+.skill-bar {
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    position: relative;
+    width: 100%;
+    height: 10px;
+}
+
+.skill-bar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 200, 0);
+    border-radius: 2px;
+    height: 10px;
+    width: 100%;
+}
+
+.skill-bar.py::after {
+    width: 100%;
+}
+
+.skill-bar.cs::after {
+    width: 100%;
+}
+
+.skill-bar.c::after {
+    width: 80%;
+    background-color: rgb(100, 255, 0);
+}
+
+.skill-bar.html::after {
+    width: 50%;
+    background-color: rgb(255, 255, 0);
+}
+
+.skill-bar.js::after {
+    width: 30%;
+    background-color: rgb(255, 100, 0);
+}

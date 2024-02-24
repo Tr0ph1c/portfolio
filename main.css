@@ -21,8 +21,8 @@
 
 /*Fonts*/
 @font-face {
-    font-family: "aileron";
-    src: url('fonts/Aileron-Light.otf');
+    font-family: "title";
+    src: url('fonts/overpass-regular.otf');
 }
 /*Fonts*/
 
@@ -105,7 +105,7 @@ body {
 
 .name-title {
     /*font-family: "Protest Strike", sans-serif;*/
-    font-family: "aileron", sans-serif;
+    font-family: "title", sans-serif;
     font-weight: 400;
     font-size: 40px;
     font-style: normal;
@@ -184,9 +184,11 @@ body {
 
 .home h1 {
     /*font-family: "Protest Strike", sans-serif;*/
-    font-family: "aileron", sans-serif;
+    font-family: "title", sans-serif;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 5px;
     color: var(--dbl);
     text-shadow: 0px 0px 2px var(--dbl);
 }

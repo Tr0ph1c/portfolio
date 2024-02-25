@@ -47,13 +47,17 @@ a:visited {
     color: black;
 }
 
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
 body {
     margin: 0;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
     height: max-content;
-    /*background: linear-gradient(to left, white 76%, black);*/
     background: white;
 }
 

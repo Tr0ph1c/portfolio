@@ -16,14 +16,28 @@
     <div class="container">
         <div class="sidebar">
             <div class="side">
-                <!--<div class="logo"><a href="#"><img src="demo.png" alt=""></a></div>
-                <div class="side-elem"><a href="#"><img src="demo.png" alt="">Home</a></div>
-                <div class="side-elem"><a href="#"><img src="demo.png" alt="">About</a></div>
-                <div class="side-elem"><a href="#"><img src="demo.png" alt="">Socials</a></div>-->
+                <div class="side-elem">
+                    <a href="#home">
+                        <div class="icon-container"><img src="icons/house.svg" alt="contacts" width="30px" height="auto"></div>
+                        <span>Home</span>
+                    </a>
+                </div>
+                <div class="side-elem">
+                    <a href="#contacts">
+                        <div class="icon-container"><img src="icons/phone.svg" alt="contacts" width="30px" height="auto"></div>
+                        <span>Contact</span>
+                    </a>
+                </div>
+                <div class="side-elem">
+                    <a href="#about">
+                        <div class="icon-container"><img src="icons/info.png" alt="contacts" width="30px" height="auto"></div>
+                        <span>About</span>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="main">
-            <div class="division">
+            <div class="division" id="home">
                 <header class="head">
                     <h1 class="name-title"><b>Ahmed Mahmoud</b></h1>
                     <a href="https://github.com/Tr0ph1c" target="_blank"><img src="icons/github.svg" width="55px" height="auto" alt="github"></a>
@@ -34,7 +48,7 @@
                     <p style="font-size:30px">I am <b>Ahmed</b>, an avid programmer always looking to learn new things!</p>
                 </div>
             </div>
-            <div class="division" style="height: 150vh;display: flex;justify-content: space-around;flex-direction: column;">
+            <div class="division" id="contacts" style="height: 150vh;display: flex;justify-content: space-around;flex-direction: column;">
                 <p style="position: absolute;top:70px;text-align: center;width: 100%;font-size: 20px;">
                     Here are my social accounts where I may post my work.<br>You may also directly contact me through <b>Whatsapp</b> or <b>Discord</b>.
                 </p>
@@ -71,7 +85,7 @@
                     </a>
                 </div>
             </div>
-            <div class="division">
+            <div class="division" id="about">
                 <div class="about">
                     <p class="about-text">
                         Hey there! I am a 19 year old programming geek and computer science student at Helwan University. You will often find me staring at lines of code or messing around with game design, video editing, and animation.<br>I love learning new stuff all the time and creating things that might just make life a little easier for those around me. Feel free to contact me directly at any time!

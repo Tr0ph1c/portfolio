@@ -12,10 +12,11 @@
 
 /*Colors*/
 :root {
-    --dbl: #285579;
-    --bg: #c8eaff;
-    --bl: #2178BF;
-    --ddbl: #2B3741;
+    --dbl: #10403B;
+    --bg: #BFBFBF;
+    --bl: #127369;
+    --ddbl: #4C5958;
+    --txt: cyan;
 }
 /*Colors*/
 
@@ -27,6 +28,10 @@
 /*Fonts*/
 
 /*GENERAL*/
+
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     text-decoration: none;
@@ -62,32 +67,69 @@ body {
 }
 
 .sidebar {
-    background-color: var(--dbl);
+    background-color: var(--bl);
     height: auto;
-    flex-basis: 70px;
+    flex-basis: 80px;
 }
 
 .side {
-    background-color: var(--bl);
+    z-index: 2;
+    opacity: 0.3;
+    top: 120px;
+    left: -3px;
     position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     height: 400px;
-    width: 70px;
+    width: 80px;
+    margin: auto;
+    padding: 0;
+    transition-duration: 0.5s;
+}
+
+.side:hover {
+    opacity: 1;
+    transform: scale(1.05) translate(7px);
+}
+
+.side-elem {
+    user-select: none;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #127369 80%, #00000000);
+    margin: 0;
+    padding: 0px 0;
+    transition: 0.5s;
+    width: 120%;
+    height: 100%;
+}
+
+.side-elem:hover {
+    text-shadow: 0px 0px 2px white;
+    transform: translate(5px);
+}
+
+.side-elem span {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+}
+
+.side-elem a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
-.side-elem {
-    margin: auto;
-    padding: 0;
-}
-
-.side img {
-    width: 50%;
-    height: 50%;
+.icon-container {
+    display: flex;
+    justify-content: center;
 }
 
 .main {
@@ -237,7 +279,7 @@ body {
 }
 
 .buttonlink span {
-    color: greenyellow;
+    color: var(--txt);
     text-shadow: 0px 0px 4px black;
     transition: 0.5s;
     font-family: "Lato", sans-serif;
@@ -307,14 +349,14 @@ body {
     width: 350px;
     height: 500px;
 
-    background-color: #385CAB;
+    background-color: var(--dbl);
     border-style: solid;
     border-width: 2px;
     border-radius: 5px;
 }
 
 .skill-name {
-    color: greenyellow;
+    color: var(--txt);
     text-shadow: 0px 0px 4px black;
     font-size: 20px;
     font-weight: bold;

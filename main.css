@@ -73,25 +73,15 @@ body {
     filter: brightness(90%);
 }
 
-.container {
-    background-color: aliceblue;
-    filter: drop-shadow(0px 0px 20px black);
-    width: 1000px;
-    height: max-content;
-    margin: auto;
-    padding: 0;
-
-    display: flex;
-    justify-content: flex-start;
-}
-
 /*GENERAL*/
 
 .main {
     height: 100%;
-    width: inherit;
+    min-width: 700px;
+    width: 1000px;
     background-color: white;
-    margin: 0;
+    filter: drop-shadow(0px 0px 20px black);
+    margin: auto;
     flex-grow: 1;
 
     display: flex;
@@ -139,10 +129,10 @@ body {
 }
 
 .division {
-    height: 700px;
+    min-height: 700px;
     width: 100%;
     margin: 0;
-    padding: 0 30px;
+    padding: 0;
     position: relative;
 
     background-color: var(--bg);
@@ -201,8 +191,17 @@ body {
     background-color: var(--bgs);
     height: 800px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 50px;
     flex-direction: column;
+}
+
+#contacts p {
+    position: relative;
+    top: 70px;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
 }
 
 .socials {
@@ -374,7 +373,61 @@ body {
 
 
 @media screen and (max-width: 1000px) {
-    .BG {
-        display: none;
+    /*home*/
+    .main {
+        width: 700px;
+    }
+    
+    .pfp {
+        width: 180px;
+        top: 100px;
+    }
+    
+    .home h1 {
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    .home p {
+        margin: 50px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    /*socials*/
+    .socials {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        gap: 20px;
+    }
+
+    .socials a {
+        width: 100%;
+        flex-basis: 50px;
+    }
+
+    .buttonlink {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    /*About*/
+    .about {
+        flex-direction: column;
+        margin: auto;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .about-text {
+        width: 80%;
+        text-align: center;
+    }
+
+    #about {
+        padding: 30px;
     }
 }

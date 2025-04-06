@@ -21,7 +21,7 @@ import Spring from "/src/assets/Blender.svg";
 import Tailwindcss from "/src/assets/Blender.svg";
 import Unity from "/src/assets/Blender.svg";
 import VS_Code from "/src/assets/Vs Code.svg";
-import Resume from "/src/assets/resume.pdf";
+import Resume from "/resume.pdf";
 
 const Skills = () => {
     let categories = ["Languages", "Frameworks", "Tools", "Art & Design"];

@@ -21,6 +21,7 @@ import Spring from "/src/assets/Blender.svg";
 import Tailwindcss from "/src/assets/Blender.svg";
 import Unity from "/src/assets/Blender.svg";
 import VS_Code from "/src/assets/Vs Code.svg";
+import Resume from "/src/assets/resume.pdf";
 
 const Skills = () => {
     let categories = ["Languages", "Frameworks", "Tools", "Art & Design"];
@@ -118,7 +119,7 @@ const Skills = () => {
             bg-amber-400 hover:bg-amber-500 border-amber-900 border-2 rounded-md transition-all
             md:my-5"
             >
-                <a href="/src/assets/resume.pdf" target="_blank">
+                <a href={Resume} target="_blank">
                     <p>View My Resume</p>
                 </a>
             </button>

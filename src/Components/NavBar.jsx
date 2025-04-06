@@ -1,3 +1,5 @@
+import Github from "/src/assets/Github.svg";
+
 const NavBar = () => {
     return (
         <nav className="navbar">
@@ -31,7 +33,7 @@ const NavBar = () => {
                 md:block"
             >
                 <img
-                    src="/src/assets/github.svg"
+                    src={Github}
                     alt="Github"
                     className="w-14 h-auto
                             drop-shadow-md/50 hover:drop-shadow-lg/40 invert

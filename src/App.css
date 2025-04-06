@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+#root {
+    overflow: hidden;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+@layer components {
+    section,
+    footer {
+        @apply w-full h-screen
+        flex flex-row items-center justify-center
+        text-center;
+    }
+    h1 {
+        @apply font-display drop-shadow-md/50 text-blue-950;
+    }
+    p {
+        @apply font-display drop-shadow-sm/50;
+    }
+
+    .navbar {
+        @apply w-full h-10 bg-linear-to-r from-blue-600 to-blue-900 rounded-b-sm border-b-2 border-amber-700 drop-shadow-md/50 fixed top-0 z-20
+        md:flex md:flex-row md:justify-between md:h-16;
+    }
+    .navbar ul {
+        @apply w-10/12 h-full flex flex-row mx-auto justify-around items-center
+        md:justify-center md:gap-x-28 md:mx-16 md:w-fit;
+    }
+    .navbar li {
+        @apply float-left my-5 text-amber-400 hover:text-amber-500 transition-all;
+    }
+    .navigation-button {
+        @apply inline-block relative;
+    }
+    .navigation-button::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: var(--color-amber-500);
+        transition: transform 0.25s ease-out;
+    }
+    .navigation-button:hover::after {
+        transform: scaleX(1);
+    }
+
+    .contact-button {
+        @apply flex flex-row gap-5 justify-center items-center m-auto
+        bg-amber-400 hover:bg-amber-500 w-sm h-12 rounded-md border-amber-900 border-2 transition-all;
+    }
+
+    .contact-button img {
+        @apply w-10 h-10;
+    }
+
+    footer {
+        @apply bg-linear-to-r from-blue-600 to-blue-900 rounded-t-sm border-t-2 border-amber-700 drop-shadow-md/100 w-full h-16 z-10;
+    }
+}
+
+.animate-updown {
+    animation: MoveUpDown 3s ease-in-out infinite;
+}
+
+@keyframes MoveUpDown {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@font-face {
+    font-family: overpass-regular;
+    src: url(/src/assets/fonts/overpass-regular.otf);
+}
+
+@theme {
+    --font-display: "overpass-regular", "Tahoma", "sans-serif";
+}

@@ -6,9 +6,9 @@ const Skills = () => {
     let [selectedButton, setSelectedButton] = useState(0);
 
     let listingsOfCategory = [
-        ["C++", "Python", "JavaScript", "C Sharp", "Java", "HTML5"], // languages
+        ["C++", "Python", "JavaScript", "CS", "Java", "HTML5"], // languages
         ["NodeJS", "React", "Spring", "Bootstrap", "Tailwindcss"], // frameworks
-        ["Linux", "VS Code", "Unity", "FL Studio"], // tools
+        ["Linux", "VS Code", "Git", "Unity", "FL Studio"], // tools
         ["Figma", "GIMP", "Blender", "Davinci"], // art & design
     ];
 

@@ -1,7 +1,7 @@
-const ContactButton = ({ title, link }) => {
+const ContactButton = ({ title, link, imageSource }) => {
     return (
         <a href={link} target="_blank" className="contact-button">
-            <img src={"/src/assets/" + title + ".svg"} alt={title + " icon"} />
+            <img src={imageSource} alt={title + " icon"} />
             <p>{title}</p>
         </a>
     );

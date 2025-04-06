@@ -1,15 +1,60 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Card from "./Card.jsx";
+
+import Blender from "/src/assets/Blender.svg";
+import Bootstrap from "/src/assets/Bootstrap.svg";
+import CPP from "/src/assets/CPP.svg";
+import CS from "/src/assets/CS.svg";
+import Davinci from "/src/assets/Davinci.svg";
+import Figma from "/src/assets/Figma.svg";
+import FL_Studio from "/src/assets/FL Studio.svg";
+import GIMP from "/src/assets/GIMP.svg";
+import Git from "/src/assets/Git.svg";
+import HTML5 from "/src/assets/HTML5.svg";
+import Java from "/src/assets/Java.svg";
+import Javascript from "/src/assets/Javascript.svg";
+import Linux from "/src/assets/Linux.svg";
+import NodeJS from "/src/assets/NodeJS.svg";
+import Python from "/src/assets/Python.svg";
+import React from "/src/assets/React.svg";
+import Spring from "/src/assets/Blender.svg";
+import Tailwindcss from "/src/assets/Blender.svg";
+import Unity from "/src/assets/Blender.svg";
+import VS_Code from "/src/assets/Vs Code.svg";
 
 const Skills = () => {
     let categories = ["Languages", "Frameworks", "Tools", "Art & Design"];
     let [selectedButton, setSelectedButton] = useState(0);
 
     let listingsOfCategory = [
-        ["C++", "Python", "JavaScript", "CS", "Java", "HTML5"], // languages
-        ["NodeJS", "React", "Spring", "Bootstrap", "Tailwindcss"], // frameworks
-        ["Linux", "VS Code", "Git", "Unity", "FL Studio"], // tools
-        ["Figma", "GIMP", "Blender", "Davinci"], // art & design
+        [
+            ["C++", CPP],
+            ["Python", Python],
+            ["Javascript", Javascript],
+            ["C#", CS],
+            ["Java", Java],
+            ["HTML5", HTML5],
+        ], // languages
+        [
+            ["NodeJS", NodeJS],
+            ["React", React],
+            ["Spring", Spring],
+            ["Bootstrap", Bootstrap],
+            ["Tailwindcss", Tailwindcss],
+        ], // frameworks
+        [
+            ["Linux", Linux],
+            ["VS Code", VS_Code],
+            ["Git", Git],
+            ["Unity", Unity],
+            ["FL Studio", FL_Studio],
+        ], // tools
+        [
+            ["Figma", Figma],
+            ["GIMP", GIMP],
+            ["Blender", Blender],
+            ["Davinci", Davinci],
+        ], // art & design
     ];
 
     return (
@@ -52,8 +97,8 @@ const Skills = () => {
                 {listingsOfCategory[selectedButton].map((listing, index) => (
                     <Card
                         key={index}
-                        title={listing}
-                        imageSource={"/src/assets/" + listing + ".svg"}
+                        title={listing[0]}
+                        imageSource={listing[1]}
                     />
                 ))}
             </div>

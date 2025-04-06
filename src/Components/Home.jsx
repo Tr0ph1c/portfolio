@@ -1,4 +1,5 @@
 import React from "react";
+import me from "/src/assets/Me.png";
 
 const Home = () => {
     return (
@@ -23,7 +24,7 @@ const Home = () => {
                 </p>
             </div>
             <img
-                src="/src/assets/Me.png"
+                src={me}
                 alt="Personal photo"
                 className="w-[400px] h-fit m-auto
                 absolute bottom-36

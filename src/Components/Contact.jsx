@@ -1,13 +1,24 @@
 import ContactButton from "./ContactButton";
 
+import Discord from "/src/assets/Discord.svg";
+import Whatsapp from "/src/assets/Whatsapp.svg";
+import Linkedin from "/src/assets/Linkedin.svg";
+import Github from "/src/assets/Github.svg";
+import Gmail from "/src/assets/Gmail.svg";
+import Gamejolt from "/src/assets/Gamejolt.svg";
+
 const Contact = () => {
     let contactList = [
-        ["Discord", "https://discordapp.com/users/304879934630002688"],
-        ["Whatsapp", "https://wa.me/+201062729177"],
-        ["Linkedin", "https://www.linkedin.com/in/ahmed-mahmoud-13aa50220/"],
-        ["Github", "https://github.com/Tr0ph1c"],
-        ["Gmail", "mailto:ahmmahmouda767@gmail.com"],
-        ["Gamejolt", "https://gamejolt.com/@DatDude767"],
+        ["Discord", "https://discordapp.com/users/304879934630002688", Discord],
+        ["Whatsapp", "https://wa.me/+201062729177", Whatsapp],
+        [
+            "Linkedin",
+            "https://www.linkedin.com/in/ahmed-mahmoud-13aa50220/",
+            Linkedin,
+        ],
+        ["Github", "https://github.com/Tr0ph1c", Github],
+        ["Gmail", "mailto:ahmmahmouda767@gmail.com", Gmail],
+        ["Gamejolt", "https://gamejolt.com/@DatDude767", Gamejolt],
     ];
 
     return (
@@ -26,6 +37,7 @@ const Contact = () => {
                     <ContactButton
                         title={contact[0]}
                         link={contact[1]}
+                        imageSource={contact[2]}
                         key={index}
                     />
                 ))}

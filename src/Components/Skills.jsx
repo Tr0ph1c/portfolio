@@ -17,9 +17,9 @@ import Linux from "/assets/Linux.svg";
 import NodeJS from "/assets/NodeJS.svg";
 import Python from "/assets/Python.svg";
 import React from "/assets/React.svg";
-import Spring from "/assets/Blender.svg";
-import Tailwindcss from "/assets/Blender.svg";
-import Unity from "/assets/Blender.svg";
+import Springboot from "/assets/Springboot.svg";
+import Tailwindcss from "/assets/Tailwindcss.svg";
+import Unity from "/assets/Unity.svg";
 import VS_Code from "/assets/VS Code.svg";
 import Resume from "/resume.pdf";
 
@@ -39,7 +39,7 @@ const Skills = () => {
         [
             ["NodeJS", NodeJS],
             ["React", React],
-            ["Spring", Spring],
+            ["Spring Boot", Springboot],
             ["Bootstrap", Bootstrap],
             ["Tailwindcss", Tailwindcss],
         ], // frameworks

@@ -1,31 +1,50 @@
 @import "tailwindcss";
 
-html {
-    scroll-behavior: smooth;
+@theme {
+    --breakpoint-3xl: 1920px;
+    --breakpoint-4xl: 2560px;
+    --breakpoint-5xl: 3840px;
 }
 
-#root {
-    overflow: hidden;
-}
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
 
-body {
-    overflow-y: scroll;
-}
+    html {
+        @apply 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl;
+    }
 
-@layer components {
-    section,
-    footer {
+    #root {
+        overflow: hidden;
+    }
+
+    body {
+        overflow-y: scroll;
+    }
+
+    section {
         @apply w-full h-screen
         flex flex-row items-center justify-center
         text-center;
     }
+
     h1 {
         @apply font-display drop-shadow-md/50 text-blue-950;
     }
+
     p {
         @apply font-display drop-shadow-sm/50;
     }
 
+    footer {
+        @apply bg-linear-to-r from-blue-600 to-blue-900 rounded-t-sm border-t-2 border-amber-700 drop-shadow-md/100 w-full h-10 z-10
+        flex flex-row items-center justify-center text-center
+        md:h-16;
+    }
+}
+
+@layer components {
     .navbar {
         @apply w-full h-10 bg-linear-to-r from-blue-600 to-blue-900 rounded-b-sm border-b-2 border-amber-700 drop-shadow-md/50 fixed top-0 z-20
         md:flex md:flex-row md:justify-between md:h-16;
@@ -62,10 +81,6 @@ body {
 
     .contact-button img {
         @apply w-10 h-10;
-    }
-
-    footer {
-        @apply bg-linear-to-r from-blue-600 to-blue-900 rounded-t-sm border-t-2 border-amber-700 drop-shadow-md/100 w-full h-16 z-10;
     }
 }
 

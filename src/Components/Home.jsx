@@ -4,8 +4,15 @@ import me from "/assets/Me.png";
 const Home = () => {
     return (
         <>
+            <img
+                src={me}
+                alt="Personal photo"
+                className="w-[400px] h-auto m-auto
+                hover:scale-105 transition-all
+                md:w-[28rem] md:relative md:bottom-0"
+            />
             <div
-                className="absolute top-96
+                className="absolute bottom-3
             flex flex-col content-center justify-center m-auto z-10
             md:relative md:top-0"
             >
@@ -23,14 +30,6 @@ const Home = () => {
                     to learn new things!
                 </p>
             </div>
-            <img
-                src={me}
-                alt="Personal photo"
-                className="w-[400px] h-fit m-auto
-                absolute bottom-36
-                hover:scale-105 transition-all
-                md:w-[450px] md:relative md:bottom-0"
-            />
         </>
     );
 };

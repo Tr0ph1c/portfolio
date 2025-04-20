@@ -9,7 +9,7 @@ function App() {
         <>
             <NavBar />
             <main className="bg-radial from-cyan-600 to-cyan-500 h-fit w-full pt-15 flex flex-col content-center">
-                <section id="Home">
+                <section id="Home" className="flex-col md:flex-row-reverse">
                     <Home />
                 </section>
                 <section id="Skills" className="w-full m-0 p-0">
@@ -18,7 +18,7 @@ function App() {
                 <section id="Contact">
                     <Contact />
                 </section>
-                <footer>
+                <footer className="md:h-16">
                     <p
                         className="m-auto text-sm text-amber-100
                     md:text-lg"

@@ -1,4 +1,4 @@
-import Github from "/src/assets/Github.svg";
+import Github from "/assets/Github.svg";
 
 const NavBar = () => {
     return (

@@ -1,26 +1,26 @@
 import { useState } from "react";
 import Card from "./Card.jsx";
 
-import Blender from "/src/assets/Blender.svg";
-import Bootstrap from "/src/assets/Bootstrap.svg";
-import CPP from "/src/assets/CPP.svg";
-import CS from "/src/assets/CS.svg";
-import Davinci from "/src/assets/Davinci.svg";
-import Figma from "/src/assets/Figma.svg";
-import FL_Studio from "/src/assets/FL Studio.svg";
-import GIMP from "/src/assets/GIMP.svg";
-import Git from "/src/assets/Git.svg";
-import HTML5 from "/src/assets/HTML5.svg";
-import Java from "/src/assets/Java.svg";
-import Javascript from "/src/assets/Javascript.svg";
-import Linux from "/src/assets/Linux.svg";
-import NodeJS from "/src/assets/NodeJS.svg";
-import Python from "/src/assets/Python.svg";
-import React from "/src/assets/React.svg";
-import Spring from "/src/assets/Blender.svg";
-import Tailwindcss from "/src/assets/Blender.svg";
-import Unity from "/src/assets/Blender.svg";
-import VS_Code from "/src/assets/Vs Code.svg";
+import Blender from "/assets/Blender.svg";
+import Bootstrap from "/assets/Bootstrap.svg";
+import CPP from "/assets/CPP.svg";
+import CS from "/assets/CS.svg";
+import Davinci from "/assets/Davinci.svg";
+import Figma from "/assets/Figma.svg";
+import FL_Studio from "/assets/FL Studio.svg";
+import GIMP from "/assets/GIMP.svg";
+import Git from "/assets/Git.svg";
+import HTML5 from "/assets/HTML5.svg";
+import Java from "/assets/Java.svg";
+import Javascript from "/assets/Javascript.svg";
+import Linux from "/assets/Linux.svg";
+import NodeJS from "/assets/NodeJS.svg";
+import Python from "/assets/Python.svg";
+import React from "/assets/React.svg";
+import Spring from "/assets/Blender.svg";
+import Tailwindcss from "/assets/Blender.svg";
+import Unity from "/assets/Blender.svg";
+import VS_Code from "/assets/VS Code.svg";
 import Resume from "/resume.pdf";
 
 const Skills = () => {

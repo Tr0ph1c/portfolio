@@ -1,5 +1,5 @@
 import React from "react";
-import me from "/src/assets/Me.png";
+import me from "/assets/Me.png";
 
 const Home = () => {
     return (

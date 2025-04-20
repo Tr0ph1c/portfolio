@@ -1,11 +1,11 @@
 import ContactButton from "./ContactButton";
 
-import Discord from "/src/assets/Discord.svg";
-import Whatsapp from "/src/assets/Whatsapp.svg";
-import Linkedin from "/src/assets/Linkedin.svg";
-import Github from "/src/assets/Github.svg";
-import Gmail from "/src/assets/Gmail.svg";
-import Gamejolt from "/src/assets/Gamejolt.svg";
+import Discord from "/assets/Discord.svg";
+import Whatsapp from "/assets/Whatsapp.svg";
+import Linkedin from "/assets/Linkedin.svg";
+import Github from "/assets/Github.svg";
+import Gmail from "/assets/Gmail.svg";
+import Gamejolt from "/assets/Gamejolt.svg";
 
 const Contact = () => {
     let contactList = [
